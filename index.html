@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renato Fernandes e as Tecnologias</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            font-size: 18px;
+        }
+        header, nav, main, section, footer {
+            padding: 20px;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+        }
+        nav {
+            background-color: #2a2a2a;
+            text-align: center;
+        }
+        nav a {
+            color: #e0e0e0;
+            text-decoration: underline;
+            margin: 0 15px;
+            display: inline-block;
+            padding: 10px;
+        }
+        nav a:hover, nav a:focus {
+            background-color: #444;
+            color: #fff;
+        }
+        section {
+            padding: 40px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+        section p {
+            color: #222;
+        }
+        h2 {
+            color: #333;
+        }
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        input, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+            width: 100%;
+            max-width: 400px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:focus {
+            background-color: #004085;
+        }
+        article {
+            background-color: #f9f9f9;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-left: 5px solid #007BFF;
+            border-radius: 5px;
+        }
+        a:focus, button:focus, input:focus, textarea:focus {
+            outline: 3px solid #0056b3;
+            outline-offset: 2px;
+        }
+        form fieldset {
+            border: none;
+            padding: 0;
+            margin-bottom: 1em;
+        }
+        form legend {
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            section {
+                padding: 20px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bem-vindo a Renato Fernandes e as tecnologias</h1>
+    <p>A tecnologia da informação transforma o mundo todos os dias. Nosso site foi criado para quem deseja aprender, explorar e se conectar com as inovações do universo da TI.</p>
+</header>
+
+<nav>
+    <a href="#sobre" aria-label="Ir para a seção Sobre">Sobre</a>
+    <a href="#temas" aria-label="Ir para a seção Temas">Temas</a>
+    <a href="#contato" aria-label="Ir para a seção Contato">Contato</a>
+    <a href="#blog" aria-label="Ir para a seção Blog">Blog</a>
+</nav>
+
+<main>
+    <section id="sobre">
+        <h2>Sobre o Renato Fernandes e as tecnologias</h2>
+        <p>Este site nasceu com o propósito de compartilhar conhecimento sobre Tecnologia da Informação de forma simples e acessível.</p>
+        <p>Nosso foco é levar conteúdos relevantes para estudantes, profissionais em formação e curiosos da área de TI.</p>
+        <p>O autor deste projeto é estudante de GTI na UNIMES, com experiência em redes, hardware, sistemas e inclusão digital.</p>
+    </section>
+
+    <section id="temas">
+        <h2>Nossos Temas</h2>
+        <p>No Site Renato Fernandes e as tecnologias, você encontrará conteúdos sobre:</p>
+        <ul>
+            <li>Hardware – Entenda os componentes do computador</li>
+            <li>Software – Conheça os principais sistemas e programas</li>
+            <li>Redes – Aprenda como os dispositivos se conectam</li>
+            <li>Sistemas Operacionais – Linux, Windows e suas aplicações</li>
+            <li>Dicas Práticas – Montagem, segurança, manutenção e mais</li>
+        </ul>
+        <p>Nossos conteúdos são atualizados no blog!</p>
+    </section>
+
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+        <p>Tem dúvidas ou sugestões? Entre em contato conosco:</p>
+        <p>📧 E-mail: <a href="mailto:renatopatto@hotmail.com">renatopatto@hotmail.com</a></p>
+        <p>📍 Cidade: Taubaté – SP</p>
+        <p>📬 Ou use o formulário abaixo para enviar sua mensagem.</p>
+        <form action="https://formsubmit.co/renatopatto@hotmail.com" method="POST" aria-label="Formulário de contato">
+            <fieldset>
+                <legend>Informações do contato</legend>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" aria-required="true" required><br><br>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="40" aria-required="true" required></textarea><br><br>
+            </fieldset>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="obrigado.html"> <!-- Redireciona para o Google após envio -->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+        <article>
+            <h3>O que faz um técnico em TI?</h3>
+            <p>Um técnico em TI é responsável por manter computadores, redes e sistemas funcionando corretamente. Ele instala programas, configura redes, resolve falhas técnicas e dá suporte a usuários.</p>
+            <p>Além da parte técnica, o profissional precisa saber se comunicar, ser organizado e gostar de aprender constantemente. É uma área com muitas oportunidades e crescimento.</p>
+        </article>
+        <article>
+            <h3>Diferença entre hardware e software</h3>
+            <p>Hardware é a parte física do computador: teclado, HD, processador, placa-mãe.</p>
+            <p>Software é a parte lógica: sistemas operacionais, aplicativos, programas.</p>
+            <p>Ambos são essenciais. Um não funciona sem o outro. Enquanto o hardware executa, o software dá as ordens.</p>
+        </article>
+        <article>
+            <h3>Por que entender redes é essencial?</h3>
+            <p>Hoje quase tudo depende de uma boa conexão. Entender redes ajuda a configurar Wi-Fi, servidores, impressoras e garantir segurança.</p>
+            <p>Conhecimentos em redes são fundamentais para trabalhar em empresas, provedores ou suporte técnico. É uma das áreas mais promissoras da TI.</p>
+        </article>
+        <article>
+            <h3>Linux vs Windows: qual aprender primeiro?</h3>
+            <p>O Windows é o mais usado em empresas e escolas. Já o Linux domina servidores e sistemas avançados.</p>
+            <p>Para quem está começando, o ideal é conhecer os dois. O Linux ajuda a entender comandos e lógica, enquanto o Windows prepara para o mercado.</p>
+        </article>
+        <article>
+            <h3>Dicas para montar seu próprio computador</h3>
+            <p>Montar um PC pode parecer difícil, mas com pesquisa e cuidado é possível economizar e aprender muito.</p>
+            <ul>
+                <li>Escolha componentes compatíveis (placa-mãe, memória, processador)</li>
+                <li>Invista em uma boa fonte de energia</li>
+                <li>Use tutoriais e vídeos confiáveis</li>
+                <li>Mantenha o sistema atualizado após a instalação</li>
+            </ul>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Renato Fernandes e as tecnologias. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
